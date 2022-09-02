@@ -58,26 +58,34 @@ tarjetaArroz.appendChild(resumenArroz);
 
 function validarVacio(inputPan, inputLeche, inputJugo, inputHuevo, inputAceite, inputArroz) {
 
-    let vacio = false
-    if (inputPan.value =="") {
-        vacio = true
+    let vacio = true
+    if (inputPan.value > 0) {
+        vacio = false
+        console.log("pan vacio")
+        
     }
-    if (inputLeche.value == "") {
-        vacio = true
+    if (inputLeche.value > 0) {
+        vacio = false
+        console.log("leche vacio")
     }
-    if (inputJugo.value == "") {
-        vacio = true
+    if (inputJugo.value > 0) {
+        vacio = false
+        console.log("jugo vacio")
     }
-    if (inputHuevo.value == "") {
-        vacio = true
+    if (inputHuevo.value > 0) {
+        vacio = false
+        console.log("huevo vacio")
 
     }
-    if (inputAceite.value == "") {
-        vacio = true
+    if (inputAceite.value > 0) {
+        vacio = false
+        console.log("aceite vacio")
     }
-    if (inputArroz.value == "") {
-        vacio = true
+    if (inputArroz.value > 0) {
+        vacio = false
+        console.log("arroz vacio")
     }
+    console.log(vacio)
     return vacio;
 }
 
@@ -156,11 +164,8 @@ function resumenCompra(inputPan, inputLeche, inputJugo, inputHuevo, inputAceite,
 
 function comprar() {
         if (validarVacio(inputPan, inputLeche, inputJugo, inputHuevo, inputAceite, inputArroz)){
-            console.log("vacio");
-        }
-        else{
-            console.log("no vacio")
-        }
+            alert("no compro ningun producto");
+        }else{
         let compra = [];
         compra = validar(inputPan, inputLeche, inputJugo, inputHuevo, inputAceite, inputArroz);
         if (compra[0]) {
@@ -169,6 +174,8 @@ function comprar() {
         else {
             alert(compra[1]);
         }
+        }
+       
     
 
 }
