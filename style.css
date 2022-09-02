@@ -34,7 +34,7 @@ footer{
 
 }
 .logo>h3{
-
+    text-align: center;
     font-size: 15px;
     font-weight: bold;
     color: orange;
@@ -74,12 +74,49 @@ footer{
 a>p{
     font-weight: bold;
 }
-
+.titulo{
+    color: rgb(0, 0, 0);
+    font-size: 75px;
+    font-weight: bolder;
+    position: relative;
+    text-shadow: white 0.3em 0.3em 0.4em
+    
+    
+    
+    
+}
 .fondo{
+    position: relative;
+}
+.fondo::before{
+    content: "";
     background-image: url("img/fondo.jpg");
     background-size:cover;
     background-position-y:center;
-    opacity: 45%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+    
+    
+    
+    
 
 
 }
+
+.contenedor_titulo{
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:start ;
+    margin-top: 50px;
+    
+    
+
+}
+
