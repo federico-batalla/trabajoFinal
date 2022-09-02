@@ -1,7 +1,7 @@
 .contenedor{
     height: 100%;
     display: grid;
-    grid-template-rows: 1fr 5fr 0.55fr;
+    grid-template-rows: 1fr 5fr 1fr;
     grid-template-columns: 1fr;
     grid-template-areas:  "header"
                          "descripcion"
