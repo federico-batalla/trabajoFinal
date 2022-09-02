@@ -214,3 +214,18 @@ a>p{
 .comprar{
     grid-area: comprar;
 }
+
+.oculto{
+    display: none;
+}
+.contenedorCompra{
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+    width: 50%;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
