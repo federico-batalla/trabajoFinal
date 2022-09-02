@@ -28,7 +28,7 @@ tarjetaJugo.appendChild(resumenJugo);
 
 let tarjetaHuevo = document.getElementById("huevo");
 let resumenHuevo = document.createElement("p")
-resumenHuevo.innerHTML = "Jugo Stock "+ huevo[0]+" Precio : $"+huevo[1];;
+resumenHuevo.innerHTML = "Huevo Stock "+ huevo[0]+" Precio : $"+huevo[1];;
 
 tarjetaHuevo.appendChild(resumenHuevo);
 

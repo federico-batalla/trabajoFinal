@@ -14,8 +14,10 @@ header{
     
 }
 footer{
+    
     border: 1px solid black;
     text-align: center;
+    min-height: 50px;
 
 }
 
@@ -126,8 +128,11 @@ a>p{
 .contenedor_tarjetas{
     
     display: grid;
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr 0.5fr;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:    "pan     leche jugo"
+                            "huevo  aceite  arroz"
+                            "comprar comprar comprar";
     height: 100%;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -179,7 +184,33 @@ a>p{
     height: 100%;
     
     
-    
+}
 
+.contenedor_comprar{
 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.pan{
+    grid-area: pan;
+}
+.leche{
+    grid-area: leche;
+}
+.jugo{
+    grid-area: jugo;
+}
+.huevo{
+    grid-area: huevo;
+}
+.aceite{
+    grid-area: aceite;
+}
+.arroz{
+    grid-area: arroz;
+}
+.comprar{
+    grid-area: comprar;
 }
