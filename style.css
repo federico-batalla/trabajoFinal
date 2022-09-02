@@ -11,6 +11,7 @@ body{
 
 header{
     border-bottom: 1px solid black;
+    
 }
 footer{
     border: 1px solid black;
@@ -120,3 +121,61 @@ a>p{
 
 }
 
+
+
+.contenedor_tarjetas{
+    
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    
+    
+}
+
+.contenedor_tarjetas>div{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.card>img{
+    width: 150px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+
+.contenedor_form{
+    padding: 20px;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: lightcoral;
+    
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+    
+    
+
+
+}

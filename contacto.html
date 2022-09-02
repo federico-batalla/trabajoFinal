@@ -23,7 +23,7 @@
                 <div>
                     <nav class="navbar navbar-expand-sm ">
                         <div class="container-fluid ">
-                            
+
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                                 aria-label="Toggle navigation">
@@ -32,15 +32,21 @@
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item px-4">
-                                        <a class="nav-link active" aria-current="page" href="index.html"><p class="efecto">Home</p></a>
+                                        <a class="nav-link active" aria-current="page" href="index.html">
+                                            <p class="efecto">Home</p>
+                                        </a>
                                     </li>
                                     <li class="nav-item px-4">
-                                        <a class="nav-link active " aria-current="page" href="#"><p class="efecto">Productos</p></a>
+                                        <a class="nav-link active " aria-current="page" href="productos.html">
+                                            <p class="efecto">Productos</p>
+                                        </a>
                                     </li>
                                     <li class="nav-item px-4">
-                                        <a class="nav-link disabled" aria-current="page" href="contacto.html"><p class="efecto">Contacto</p></a>
+                                        <a class="nav-link disabled" aria-current="page" href="#">
+                                            <p class="efecto">Contacto</p>
+                                        </a>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
@@ -51,10 +57,70 @@
 
         </header>
         <main class="descripcion fondo">
-           <div class="contenedor_titulo">
-            <h3 class="titulo">Tienda de Productos online </h3>
-           </div>
-
+            <div class="formulario">
+                <div class="contenedor_form">
+                    <p>Formulario de contacto</p>
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div class="col-md-4">
+                            <label for="validationCustom01" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="validationCustom01" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustom02" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="validationCustom02" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="validationCustomUsername" class="form-label">Nombre de Usuario</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                <input type="text" class="form-control" id="validationCustomUsername"
+                                    aria-describedby="inputGroupPrepend" required>
+                                <div class="invalid-feedback">
+                                    Please choose a username.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom04" class="form-label">Provincia</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected disabled value="">elegir</option>
+                                <option>TDF</option>
+                                <option>BS AS</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid state.
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="validationCustom05" class="form-label">C.P.</label>
+                            <input type="text" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <span class="input-group-text">Mensaje</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-dark" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
         </main>
         <footer class="footer">footer</footer>
