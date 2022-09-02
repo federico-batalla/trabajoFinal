@@ -1,12 +1,28 @@
-.container{
+.contenedor{
+    height: 100%;
     display: grid;
-    grid-template-rows: repeat(6,1fr);
+    grid-template-rows: 1fr 5fr 1fr;
     grid-template-columns: 1fr;
-    grid-area:  "header"
-                "description"
-                "Productos"
-                "Redes"
-                "sucursales"
-                "footer";
+    grid-template-areas:  "header"
+                         "descripcion"
+                         "footer";
 
 }
+
+
+.header{
+    min-height: 25%;
+   
+    grid-area: header;
+
+}
+.descripcion{
+    min-height: 50%;
+    grid-area: descripcion;
+}
+
+.footer{
+    min-height: 25%;
+    grid-area: footer;
+}
+    
