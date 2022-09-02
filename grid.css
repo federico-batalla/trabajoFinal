@@ -1,7 +1,7 @@
 .contenedor{
     height: 100%;
     display: grid;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 5fr 0.55fr;
     grid-template-columns: 1fr;
     grid-template-areas:  "header"
                          "descripcion"
@@ -11,18 +11,18 @@
 
 
 .header{
-    min-height: 25%;
+    
    
     grid-area: header;
 
 }
 .descripcion{
-    min-height: 50%;
+    
     grid-area: descripcion;
 }
 
 .footer{
-    min-height: 25%;
+    
     grid-area: footer;
 }
     

@@ -8,7 +8,11 @@ body{
     font-family: "Titillium Web",sans-serif;
     
 }
-header, main, footer, .header>div{
+
+header{
+    border-bottom: 1px solid black;
+}
+footer{
     border: 1px solid black;
     text-align: center;
 
@@ -25,12 +29,13 @@ header, main, footer, .header>div{
     flex-direction:column;
     justify-content:center;
     align-items: center;
+    
     width: 25%;
 
 }
-.logo>p{
+.logo>h3{
 
-    font-size: large;
+    font-size: 15px;
     font-weight: bold;
     color: orange;
 
@@ -38,7 +43,7 @@ header, main, footer, .header>div{
 .navi{
     display: flex;
     align-items:center;
-    justify-content:space-evenly;
+    justify-content:flex-end;
     width: 75%;
 }   
 
@@ -47,16 +52,34 @@ header, main, footer, .header>div{
     linear-gradient(
         transparent 0%,
         transparent 90%,
-        hotpink 90%,
-        hotpink 100%
+        
+        red 90%,
+        red 100%
+       
 
     );
     background-repeat: no-repeat;
-    background-size: 0% 100%;
+    background-size: 0% 100% ;
     background-position-x: right;
     transition: background-size 300ms;
 }
 .efecto:hover{
     background-size: 100% 100%;
     background-position-x: left;
+}
+.imagen{
+    width: 40px;
+}
+
+a>p{
+    font-weight: bold;
+}
+
+.fondo{
+    background-image: url("img/fondo.jpg");
+    background-size:cover;
+    background-position-y:center;
+    opacity: 45%;
+
+
 }
