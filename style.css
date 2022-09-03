@@ -1,20 +1,55 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
-    height: 100vh;
-    font-family: "Titillium Web",sans-serif;
-    
+.contenedor {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+        "descripcion"
+        "footer";
+
 }
 
-header{
-    border-bottom: 1px solid black;
-    
+
+
+
+.header {
+
+
+    grid-area: header;
+
 }
-footer{
-    
+
+.descripcion {
+
+    grid-area: descripcion;
+
+
+
+}
+
+.footer {
+
+    grid-area: footer;
+}
+
+body {
+    height: 100vh;
+    font-family: "Titillium Web", sans-serif;
+
+}
+
+header {
+    border-bottom: 1px solid black;
+
+}
+
+footer {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,149 +59,148 @@ footer{
 
 }
 
-.header{
+.header {
     width: auto;
     display: flex;
-    
+
 }
 
-.logo{
+.logo {
     display: flex;
-    flex-direction:column;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    
+
     width: 25%;
 
 }
-.logo>h3{
+
+.logo>h3 {
     text-align: center;
     font-size: 15px;
     font-weight: bold;
     color: orange;
 
 }
-.navi{
+
+.navi {
     display: flex;
-    align-items:center;
-    justify-content:flex-end;
+    align-items: center;
+    justify-content: flex-end;
     width: 75%;
-}   
+}
 
-.efecto{
+.efecto {
     background-image:
-    linear-gradient(
-        transparent 0%,
-        transparent 90%,
-        
-        red 90%,
-        red 100%
-       
+        linear-gradient(transparent 0%,
+            transparent 90%,
 
-    );
+            red 90%,
+            red 100%);
     background-repeat: no-repeat;
-    background-size: 0% 100% ;
+    background-size: 0% 100%;
     background-position-x: right;
     transition: background-size 300ms;
 }
-.efecto:hover{
+
+.efecto:hover {
     background-size: 100% 100%;
     background-position-x: left;
 }
-.imagen{
+
+.imagen {
     width: 40px;
 }
 
-a>p{
+a>p {
     font-weight: bold;
 }
-.titulo{
+
+.titulo {
     color: rgb(0, 0, 0);
     font-size: 75px;
     font-weight: bolder;
     position: relative;
     text-shadow: white 0.3em 0.3em 0.4em
-    
-    
-    
-    
 }
-.fondo{
+
+.fondo {
     position: relative;
 }
-.fondo::before{
+
+.fondo::before {
     content: "";
     background-image: url("img/fondo.jpg");
-    background-size:cover;
-    background-position-y:center;
+    background-size: cover;
+    background-position-y: center;
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     opacity: 0.5;
-    
-    
-    
-    
+
+
+
+
 
 
 }
 
-.contenedor_titulo{
-    
+.contenedor_titulo {
+
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:start ;
+    justify-content: start;
     margin-top: 50px;
-    
-    
+
+
 
 }
 
 
 
-.contenedor_tarjetas{
-    
+.contenedor_tarjetas {
+
     display: grid;
     grid-template-rows: 1fr 1fr 0.5fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:    "pan     leche jugo"
-                            "huevo  aceite  arroz"
-                            "comprar comprar comprar";
+    grid-template-areas: "pan     leche jugo"
+        "huevo  aceite  arroz"
+        "comprar comprar comprar";
     height: 100%;
     margin-top: 15px;
     margin-bottom: 20px;
-    
-    
+
+
 }
 
-.contenedor_tarjetas>div{
-    display: flex; 
+.contenedor_tarjetas>div {
+    display: flex;
     justify-content: center;
     align-items: center;
-    
+
 
 
 
 }
 
-.card>img{
+.card>img {
     width: 150px;
 }
 
-.card{
+.card {
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
     padding-bottom: 10px;
-    
+
 }
 
-.contenedor_form{
+.contenedor_form {
     padding: 20px;
     width: 50%;
     border: 1px solid black;
@@ -177,51 +211,59 @@ a>p{
     align-items: center;
     position: relative;
     background-color: lightcoral;
-    
+
 }
 
-.formulario{
+.formulario {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    
-    
+
+
 }
 
-.contenedor_comprar{
+.contenedor_comprar {
 
     display: flex;
     justify-content: center;
     align-items: flex-start;
 
 }
-.pan{
+
+.pan {
     grid-area: pan;
 }
-.leche{
+
+.leche {
     grid-area: leche;
 }
-.jugo{
+
+.jugo {
     grid-area: jugo;
 }
-.huevo{
+
+.huevo {
     grid-area: huevo;
 }
-.aceite{
+
+.aceite {
     grid-area: aceite;
 }
-.arroz{
+
+.arroz {
     grid-area: arroz;
 }
-.comprar{
+
+.comprar {
     grid-area: comprar;
 }
 
-.oculto{
+.oculto {
     display: none;
 }
-.contenedorCompra{
+
+.contenedorCompra {
     background-color: white;
     position: relative;
     border-radius: 20px;
@@ -233,7 +275,64 @@ a>p{
     text-align: center;
 }
 
-footer img{
+footer img {
     width: 40px;
     margin: 20px;
+}
+
+.textoFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer li {
+
+    list-style: none;
+}
+
+
+
+
+@media only screen and (max-width: 720px) {
+
+
+    .contenedor_tarjetas {
+        grid-template-rows: repeat(7, fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: "pan"
+            "leche"
+            "jugo"
+            "huevo"
+            "aceite"
+            "arroz"
+            "comprar";
+
+    }
+
+    .header{
+    
+   
+        grid-area: header;
+    
+    }
+    .descripcion{
+        
+        grid-area: descripcion;
+        height: max-content;
+        
+        
+      
+    }
+    
+    .footer{
+        height: max-content;
+        grid-area: footer;}
+
+    
+    }
+
+
 }
